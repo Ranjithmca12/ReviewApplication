@@ -1,0 +1,25 @@
+<div class="panel panel-info">
+    <div class="panel-heading">Review Tool</div>
+    <div class="panel-body">
+        <div>
+        <div class="col-sm-6"><span>Reviewer</span>
+        <select>
+            <option value="select">select</option>
+            <option value="Srinivas">Srinivas</option>
+            <option value="Anand">Anand</option>
+        </select>
+        </div>
+        <div class="col-sm-6"><span>Developer</span>
+        <select><option value="select">select</option>
+         <option value="Ranjith">Ranjith</option>
+            <option value="Anand">Anand</option></select></div></div>
+        <div>
+            <span>Review Type</span>
+             <input type="radio" ([ngModel])="{checked: reviewTypes.type == 'uiChecklist'}" (change)="checkElementList('uiChecklist')"  name="type" value="uiChecklist">UI Checklist
+             <input type="radio" ([ngModel])="{checked: reviewTypes.type == 'serviceChecklist'}"  (change)="checkElementList('serviceChecklist')" name="type" value="serviceChecklist">Service Checklist
+        </div>
+
+        <div><tableUtil [checkListArray]="checkListArray" [listId]="listId"></tableUtil></div>
+    </div>
+
+</div>

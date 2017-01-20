@@ -1,0 +1,20 @@
+<div>
+    <table class="panel panel-info">
+        <thead class="panel-heading">
+            <tr>
+            <th class="col-sm-3">Review Id</th>
+            <th class="col-sm-3">Review criteria</th>
+            <th class="col-sm-3">Review Status</th>
+            <th class="col-sm-3">Review Comments</th></tr>
+        </thead>
+        <tbody class="panel-body">
+            <tr *ngFor="let checklist of checkListArray">
+                <td class="col-sm-3">{{checklist.id}}</td>
+                <td class="col-sm-3">{{checklist.checkpoint}}</td>
+                <td class="col-sm-3">{{checklist.result}}</td>
+                 <td class="col-sm-3">{{checklist.comments}} </td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
